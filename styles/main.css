@@ -1,0 +1,512 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url(../fonts/helveticaneuecyr-bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+.yellow {
+    color: #231f20;     
+}
+
+.yellow-block {
+    background-color: rgb(48, 194, 48); 
+}
+
+.black {
+    color: #231f20;
+}
+
+.black-block {
+    background-color: #231f20;
+}
+
+.thirty-percentages {
+    width: 30%;
+}
+
+.fourty-percentages {
+    width: 40%;
+}
+
+.fifty-percentages {
+    width: 50%;
+}
+
+.sixty-percentages {
+    width: 60%;
+}
+
+.seventy-percentages {
+    width: 70%;
+}
+
+body {
+    margin: 0px;
+}
+
+.container p {
+    font-family: 'Montserrat';
+}
+
+@media(max-width:950px) {
+    .container p {
+        font-size: 12px;
+    }   
+}
+
+.container h1, h2, h3 {
+    font-family: 'Montserrat Bold';
+    text-transform: uppercase;
+}
+
+.container h1 {
+    margin: 0px;
+    font-size: 31px;
+}
+
+.container h2 {
+    font-size: calc(1.9vw + 3px);
+}
+
+.container h3 {
+    font-size: calc(1.4vw + 3px);
+}
+
+@media(min-width:670px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }    
+}
+
+.container .left-section {
+    width: 35%;
+    padding: 0px 30px;
+}
+
+@media(max-width:1000px) {
+    .container .left-section {
+        width: 40%;
+    }
+}
+
+@media(max-width:670px) {
+    .container .left-section {
+        width: 80%;
+        margin: 0px auto;
+        padding: 0px;
+    }
+}
+
+.container .left-section .avatar-blog img {
+    width: 100%;
+    height: 555px;
+    object-fit: cover;
+}
+
+@media(min-width:900px) {
+    .container .left-section .info-tags-about-candidate {
+        padding-left: 60px;
+    }
+}
+
+.container .left-section .info-tags-about-candidate .greetings-block {
+    margin: 20px 0px 30px 14px;
+    position: relative;
+}
+
+.container .left-section .info-tags-about-candidate .greetings-block .candidate-name {
+    font-family: 'HelveticaNeueCyr';
+    font-size: calc(4.5vw + 3px);
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.container .left-section .info-tags-about-candidate .greetings-block .candidate-name div:nth-child(1) {
+    width: 100%;
+ }
+
+.container .left-section .info-tags-about-candidate .greetings-block .candidate-name div:nth-child(2) {
+   margin-right: 2%;
+}
+
+.container .left-section .info-tags-about-candidate .greetings-block .yellow-block {
+    height: calc(100% + 80px);
+    width: 3.5vw;
+    position: absolute;
+    top: -80px;
+ }
+
+ .container .left-section .info-tags-about-candidate .contacts-block {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+
+.container .left-section .info-tags-about-candidate .contacts-block h2 {
+    margin: 10px;
+}
+
+.container .left-section .info-tags-about-candidate .contacts-block .details span {
+    font-size: 1.5vw;
+    font-family: 'Montserrat';
+}
+
+.container .left-section .info-tags-about-candidate .skills-block {
+    padding: 0px 20px;
+}
+
+.container .left-section .info-tags-about-candidate .skills-block h2 {
+    margin: 60px auto;
+}
+
+.container .left-section .info-tags-about-candidate .skills-block .skill-info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.container .left-section .info-tags-about-candidate .skills-block .skill-info-item .skill-name {
+   font-family: 'Montserrat';
+}
+
+.container .left-section .info-tags-about-candidate .skills-block .skill-info-item .skill-range {
+    display: flex;
+    width: 60%;
+    animation: myAnim3 10s cubic-bezier(0.55, 0, 1, 0.45) 8s infinite normal forwards;
+}
+
+@keyframes myAnim3 {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0.5;
+	}
+}
+
+.container .left-section .info-tags-about-candidate .skills-block .skill-info-item .skill-range .part {
+    height: 15px;
+}
+
+.container .left-section .info-tags-about-candidate .languages-block {
+    padding: 20px 0px;
+}
+
+.container .left-section .info-tags-about-candidate .languages-block .languages-details {
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    height: 110px;
+    position: relative;
+}
+
+.container .left-section .info-tags-about-candidate .languages-block .languages-details .language-block {
+    background-image: url(../images/yellow_square.png);
+    height: 130px;
+    width: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: myAnim2 2s ease 2s infinite normal forwards;
+}
+
+@keyframes myAnim2 {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+.container .left-section .info-tags-about-candidate .languages-block .languages-details .language-block .language-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .right-section {
+    width: 65%;
+    border-left: 3px solid  rgb(48, 194, 48);  
+    margin-top: 50px;
+    padding: 0px 100px 0px 30px;
+}
+
+@media(max-width:1000px) {
+    .container .right-section {
+        width: 60%;
+    }
+}
+
+@media(max-width:900px) {
+    .container .right-section {
+        padding-right: 60px;
+    }
+}
+
+@media(max-width:670px) {
+    .container .right-section {
+        width: 80%;
+        margin: 0px auto;
+        padding: 0px 30px;
+    }
+}
+
+.container .right-section .right-corner-rectangular {
+    height: 200px;
+    width: 70px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    animation: myAnim 3s ease-in 0s 1 normal forwards;    
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(48px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(26px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(13px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@media(max-width:900px) {
+    .container .right-section .right-corner-rectangular {
+        width: 60px;
+    }
+}
+
+@media(max-width:470px) {
+    .container .right-section .right-corner-rectangular {
+       display: none;
+    }
+}
+
+.container .right-section h2 {
+    margin: 50px 0px 0px 0px;
+}
+
+.container .right-section hr {
+    margin-left: -30px;
+    height: 2px;
+    border: none;
+    background:  rgb(48, 212, 48); 
+    animation: myAnim1 4s ease-in 0s 1 normal forwards; 
+}
+@keyframes myAnim1 {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(400px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(200px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(50px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+
+.container .right-section .profile-info-block hr {
+    width: 28%;
+}
+
+.container .right-section .profile-info-block .about-candidate {
+    height: 410px;
+}
+
+@media (max-width: 550px){
+.container p {
+    font-size: 11px;
+}
+}
+
+
+@media(max-width:670px) {
+    .container .right-section .profile-info-block .about-candidate {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+@media(min-width:670px) {
+    .container .right-section .education-block {
+        padding: 50px 0px;
+    }
+}
+
+.container .right-section .education-block hr {
+    width: 34%;
+}
+
+.container .right-section .education-block .education-info-block {
+    display: flex;
+}
+
+.container .right-section .education-block .education-info-block .education-info-item {
+    width: 50%;
+}
+
+.container .right-section .work-experience-block hr {
+    width: 50%;
+}
+
+.container .right-section .work-experience-block .work-experience-info-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.container .right-section .work-experience-block .work-experience-info-item h3 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container .right-section .work-experience-block .work-experience-info-item .company-name {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+footer {
+    padding: 20px;
+}
+
+footer .github-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+
+.itvdn{
+    color: rgb(48, 212, 48);  
+    text-decoration: none;
+}
+
+.avatar-blog{
+overflow: hidden;
+display: inline-block;
+}
+
+#logo {
+    transition: 1s;
+    display: block;
+}
+
+#logo:hover {
+    transform: scale(1.2);
+}
